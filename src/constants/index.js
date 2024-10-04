@@ -218,7 +218,7 @@ import {
         },
       ],
       image: portfolio,
-      source_code_link: "https://github.com/virsworld/APS105_labs",
+      source_code_link: "https://github.com/virsworld/3D_Portfolio_Redesign",
     },
   ];
   
