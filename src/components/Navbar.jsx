@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { Tilt } from "react-tilt";
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { logo, menu, close, linkedin } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -29,11 +30,11 @@ const Navbar = () => {
           <p className="text-white 
           text-[18px] font-bold cursor-pointer flex">
             Vir &nbsp;
-            <span className="sm:block hidden">|&nbsp; Patel
+            <span className="md:block hidden">|&nbsp; Patel
             </span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden md:flex flex-row gap-10">
           {
             navLinks.map((link) => (
               <li 
@@ -51,7 +52,7 @@ const Navbar = () => {
             ))
           }
         </ul>
-        <div className="sm:hidden flex flex-1
+        <div className="md:hidden flex flex-1
         justify-end items-center">
           <img 
           src={toggle ? close : menu} 
@@ -63,7 +64,7 @@ const Navbar = () => {
           <div
           className={`${!toggle ? 'hidden' : 'flex'} p-6
           black-gradient absolute top-20 right-0 mx-4 my-2
-          min-w[140px] z-10 rounded-xl`}
+          min-w[160px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start
             flex-col gap-4">
@@ -90,6 +91,26 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <Tilt
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450
+          }}
+          className="transparent"
+        >
+          <div className="w-[50px] h-[50px] mx-4
+                rounded-full flex justify-center
+                items-center cursor-pointer">
+            <a href="https://www.linkedin.com/in/vir-patel/" target="_blank">
+              <img 
+                src={linkedin}
+                alt="LinkedIn"
+                className="w-[50px] h-[50px] object-contain cursor-pointer"
+              />
+            </a>
+          </div>
+        </Tilt>
     </nav>
   );
 };
