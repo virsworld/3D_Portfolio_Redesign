@@ -21,7 +21,7 @@ const Hero = () => {
           className="w-5 h-5 rounded-full bg-[#915eff]"
           />
           <div 
-          className="w-1 md:h-80 h-40 violet-gradient"
+          className="w-1 sm:h-80 h-40 violet-gradient"
           />
 
         </div>
@@ -35,7 +35,8 @@ const Hero = () => {
           text-white-100`}
           >
           I am an aspiring Software Developer currently a student
-          at the University of Toronto enrolled in Computer Engineering
+          at the University of Toronto enrolled in Computer Engineering 
+          <span role="img" aria-label="dog"> 😊 </span>
           </p>
         </div>
       </div>

@@ -18,7 +18,7 @@ const Computers = ({ isMobile }) => {
         object={computer.scene}
         // scale={isMobile ? 0.12 : 1}
         scale={isMobile ? 0.12 : 0.15}
-        position={isMobile? [0, -1, 0.38] :[0, -1, 0.74]}
+        position={isMobile? [0, -1, 0.38] :[0, -0.75, 0.74]}
         rotation={[0, 70.45, 0]}
       />
     </mesh>
@@ -44,8 +44,6 @@ const ComputersCanvas = () => {
     }
 
   })
-
-
   return(
     <Canvas
       frameloop="demand"

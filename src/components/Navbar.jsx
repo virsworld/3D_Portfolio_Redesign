@@ -16,7 +16,7 @@ const Navbar = () => {
       items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between 
-      items-center max-w-7xl mx-auto">
+      items-center max-w-7xl mx-auto ">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -27,14 +27,14 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9
           h-9 object-contain"/>
-          <p className="text-white 
+          {/* <p className="text-white 
           text-[18px] font-bold cursor-pointer flex">
             Vir &nbsp;
             <span className="md:block hidden">|&nbsp; Patel
             </span>
-          </p>
+          </p> */}
         </Link>
-        <ul className="list-none hidden md:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {
             navLinks.map((link) => (
               <li 
@@ -52,7 +52,7 @@ const Navbar = () => {
             ))
           }
         </ul>
-        <div className="md:hidden flex flex-1
+        <div className="sm:hidden flex flex-1
         justify-end items-center">
           <img 
           src={toggle ? close : menu} 

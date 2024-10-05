@@ -22,7 +22,7 @@ const Works = () => {
             speed: 450
           }}
           className="bg-tertiary p-5 rounded-2xl
-          md:w-[360px] w-full"
+          sm:w-[360px] w-full"
         >
           <div
           className="relative w-full h-[230px]"
