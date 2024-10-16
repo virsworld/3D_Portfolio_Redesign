@@ -26,6 +26,7 @@ import {
     portfolio,
     reversibot,
     musicbot,
+    notesapp,
     carrent,
     jobit,
     tripguide,
@@ -111,10 +112,10 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
-    // {
-    //   name: "MongoDB",
-    //   icon: mongodb,
-    // },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
     {
       name: "Three JS",
       icon: threejs,
@@ -223,6 +224,39 @@ import {
       ],
       image: portfolio,
       source_code_link: "https://github.com/virsworld/3D_Portfolio_Redesign",
+    },
+    {
+      name: "Simple Stream (note taking platform)",
+      description:
+        "Developed a minimalistic note-taking platform to explore backend development.",
+      tags: [
+        {
+          name: "MongoDB",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Postman",
+          color: "green-text-gradient",
+        },
+        {
+          name: "React",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: notesapp,
+      source_code_link: "https://github.com/virsworld/notes_app_SS",
     },
   ];
   

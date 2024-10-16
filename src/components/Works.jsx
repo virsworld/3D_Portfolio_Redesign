@@ -6,6 +6,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from '../utils/motion';
+import { demoicon } from "../assets";
 
 const Works = () => {
   const ProjectCard = ( {index, name, description,
@@ -35,8 +36,24 @@ const Works = () => {
             />
             <div
             className="absolute inset-0 flex
-            justify-end m-3 card-img_hover"
+            justify-end m-3 card-img_hover gap-1"
             >
+              {name === "Simple Stream (note taking platform)" ? <div
+              onClick={() => window.open
+                ("https://www.youtube.com/playlist?list=PLB9362XTPe5WMG336mfskdVWbgV0Sv9T2", "_blank")
+              }
+              className="black-gradient w-10 h-10
+              rounded-full flex justify-center
+              items-center cursor-pointer"
+              >
+                <img 
+                src={demoicon}
+                alt="demo icon"
+                className="w-1/2 h-1/2 object-contain"
+                />
+
+              </div> : null}
+
               <div
               onClick={() => window.open
                 (source_code_link, "_blank")

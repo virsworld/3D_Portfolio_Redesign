@@ -6,7 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import linkedin from "./linkedin.png"
+import linkedin from "./linkedin.png";
+import demoicon from "./demoicon.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -34,12 +35,14 @@ import hh from "./company/hh.png";
 import portfolio from './portfolio.png';
 import reversibot from './reversi.png';
 import musicbot from './music_bot.png';
+import notesapp from './notes_app.png';
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
   linkedin,
+  demoicon,
   logo,
   backend,
   creator,
@@ -72,6 +75,7 @@ export {
   portfolio,
   reversibot,
   musicbot,
+  notesapp,
   carrent,
   jobit,
   tripguide,
