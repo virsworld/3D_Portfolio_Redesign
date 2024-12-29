@@ -64,26 +64,26 @@ const About = () => {
       className="mt-4 text-secondary text-[17px]
       max-w-3xl leading-[30px]"
       >
-        I am a passionate software developer with experience in Front-End 
+        I am a passionate software developer with experience in web- 
         development and artificial intelligence. 
 
-        My skills include Python, C/C++, JavaScript, and tools like React and Tailwind, 
-        allowing me to develop scalable and efficient solutions. 
+        My most used programming languages are C/C++, JavaScript, and Python. I often 
+        develop projects using React.js and Node.js for client-side and server-side.
 
         I’ve created projects such as a Discord Music Bot and a Reversi bot that uses an 
-        AI algorithm.
+        AI algorithm. As well as a simple note-taking application.
 
-        Whether it's tackling complex algorithms or developing user-friendly interfaces, 
+        Whether it's tackling complex algorithms or developing user-friendly software, 
         I am driven by the desire to innovate and make an impact in the tech industry.
       </motion.p>
 
-      <div
+      {/* <div
       className="my-20 flex flex-wrap gap-10"
       >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   )
 }
