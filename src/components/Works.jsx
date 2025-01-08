@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from '../utils/motion';
 import { demoicon } from "../assets";
+import { websiteicon } from "../assets";
 
 const Works = () => {
   const ProjectCard = ( {index, name, description,
@@ -49,6 +50,21 @@ const Works = () => {
                 <img 
                 src={demoicon}
                 alt="demo icon"
+                className="w-1/2 h-1/2 object-contain"
+                />
+
+              </div> : null}
+              {name === "TestcaseDB (testcase contribution site)" ? <div
+              onClick={() => window.open
+                ("https://testcasedb.netlify.app/", "_blank")
+              }
+              className="black-gradient w-10 h-10
+              rounded-full flex justify-center
+              items-center cursor-pointer"
+              >
+                <img 
+                src={websiteicon}
+                alt="website"
                 className="w-1/2 h-1/2 object-contain"
                 />
 

@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import linkedin from "./linkedin.png";
 import demoicon from "./demoicon.png";
+import websiteicon from "./website_icon.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -39,10 +40,12 @@ import notesapp from './notes_app.png';
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import tcDB from "./tcdb-high-resolution-logo-grayscale.png";
 
 export {
   linkedin,
   demoicon,
+  websiteicon,
   logo,
   backend,
   creator,
@@ -79,4 +82,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  tcDB,
 };
