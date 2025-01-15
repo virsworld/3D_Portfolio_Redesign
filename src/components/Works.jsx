@@ -8,6 +8,7 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from '../utils/motion';
 import { demoicon } from "../assets";
 import { websiteicon } from "../assets";
+import { slidesicon } from "../assets";
 
 const Works = () => {
   const ProjectCard = ( {index, name, description,
@@ -69,8 +70,23 @@ const Works = () => {
                 />
 
               </div> : null}
+              {name === "Cracker (password cracking tool)" ? <div
+              onClick={() => window.open
+                ("https://docs.google.com/presentation/d/1Uy7J0Y0WWg2kw5RO47jo83wm7phxgxnKt66pGZyQ9IQ/edit?usp=sharing", "_blank")
+              }
+              className="black-gradient w-10 h-10
+              rounded-full flex justify-center
+              items-center cursor-pointer"
+              >
+                <img 
+                src={slidesicon}
+                alt="slides"
+                className="w-1/2 h-1/2 object-contain"
+                />
 
-              <div
+              </div> : null}
+
+              {source_code_link ? <div
               onClick={() => window.open
                 (source_code_link, "_blank")
               }
@@ -84,7 +100,7 @@ const Works = () => {
                 className="w-1/2 h-1/2 object-contain"
                 />
 
-              </div>
+              </div> : null}
               
             </div>
           </div>

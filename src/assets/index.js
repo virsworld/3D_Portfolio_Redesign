@@ -9,6 +9,7 @@ import close from "./close.svg";
 import linkedin from "./linkedin.png";
 import demoicon from "./demoicon.png";
 import websiteicon from "./website_icon.png";
+import slidesicon from "./slides_icon.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -41,11 +42,13 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import tcDB from "./tcdb-high-resolution-logo-grayscale.png";
+import cracker from "./cracker_project.png";
 
 export {
   linkedin,
   demoicon,
   websiteicon,
+  slidesicon,
   logo,
   backend,
   creator,
@@ -83,4 +86,5 @@ export {
   jobit,
   tripguide,
   tcDB,
+  cracker,
 };

@@ -1,4 +1,5 @@
 import {
+    logo,
     mobile,
     backend,
     creator,
@@ -28,6 +29,7 @@ import {
     musicbot,
     notesapp,
     tcDB,
+    cracker,
     carrent,
     jobit,
     tripguide,
@@ -223,7 +225,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: portfolio,
+      image: logo,
       source_code_link: "https://github.com/virsworld/3D_Portfolio_Redesign",
     },
     {
@@ -295,6 +297,27 @@ import {
       ],
       image: tcDB,
       source_code_link: "https://github.com/virsworld/testcases",
+    },
+    {
+      name: "Cracker (password cracking tool)",
+      description:
+        "Attempts to crack user passwords taken from leaked hash data by hashing common passwords and cross-referencing.",
+      tags: [
+        {
+          name: "Verilog",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ModelSim",
+          color: "green-text-gradient",
+        },
+        {
+          name: "SHA256 Algorithm",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cracker,
+      source_code_link: "",
     },
   ];
   
